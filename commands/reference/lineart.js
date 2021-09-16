@@ -2,8 +2,8 @@ const { Message, Client, MessageEmbed } = require("discord.js");
 const { pagination } = require("reconlx");
 
 module.exports = {
-  name: "pose",
-  aliases: ['poses'],
+  name: "lineart",
+  aliases: ['line'],
   /**
    *
    * @param {Client} client
@@ -11,49 +11,46 @@ module.exports = {
    * @param {String[]} args
    */
   run: async (client, message, args) => {
-
+    
     const embed1 = new MessageEmbed()
-      .setTitle('Superhero Pose')
-      .setImage('https://i.imgur.com/5JedzeN.png')
+      .setTitle('Hair')
+      .setImage('https://imgur.com/UC8vhNw.png')
       .setColor('RANDOM')
-      .setFooter("Credit: ");
-
-    const embed2 = new MessageEmbed()
-      .setTitle('Sword Fighting')
-      .setImage('https://i.imgur.com/x3pkWky.png')
+      .setFooter('Credit: ')
+      
+      const embed2 = new MessageEmbed()
+      .setTitle('Hair')
+      .setImage('https://imgur.com/htxWQvB.png')
       .setColor('RANDOM')
-      .setFooter("Credit: ")
-
-    const embed3 = new MessageEmbed()
-      .setTitle('Dodge Pose')
-      .setImage('https://imgur.com/ZszLqEG.png')
+      .setFooter('Credit: ')
+      
+      const embed3 = new MessageEmbed()
+      .setTitle('Hair')
+      .setImage('https://imgur.com/UzWY8Ve.png')
       .setColor('RANDOM')
       .setFooter('Credit: ')
       
       const embed4 = new MessageEmbed()
-      .setTitle('Superhero Pose')
-      .setImage('https://imgur.com/6ckHWbi.png')
+      .setTitle('Hair')
+      .setImage('https://imgur.com/BlhBIIb.png')
       .setColor('RANDOM')
       .setFooter('Credit: ')
       
-      const embed5 = new MessageEmbed()
-      .setTitle('Easy Pose')
-      .setImage('https://imgur.com/NDNr7Zo.png')
+     const embed5 = new MessageEmbed()
+      .setTitle('Head')
+      .setImage('https://imgur.com/DhRs5bD.png')
       .setColor('RANDOM')
       .setFooter('Credit: ')
       
-      const embed6 = new MessageEmbed()
-      .setTitle('Sword Pose')
-      .setImage('https://imgur.com/5GwrOSd.png')
-      .setColor('RANDOM')
-      .setFooter('Credit: ')
+      const embeds = [
+        embed1,
+        embed2,
+        embed3,
+        embed4,
+        embed5
+        ]
       
-      
-
-    const embeds = [embed1, embed2, embed3, embed4, embed5, embed6]
-
-
-    pagination({
+      pagination({
       embeds: embeds,
       channel: message.channel,
       author: message.author,

@@ -2,8 +2,8 @@ const { Message, Client, MessageEmbed } = require("discord.js");
 const { pagination } = require("reconlx");
 
 module.exports = {
-  name: "pose",
-  aliases: ['poses'],
+  name: "clothes",
+  aliases: ['skirt'],
   /**
    *
    * @param {Client} client
@@ -13,44 +13,48 @@ module.exports = {
   run: async (client, message, args) => {
 
     const embed1 = new MessageEmbed()
-      .setTitle('Superhero Pose')
-      .setImage('https://i.imgur.com/5JedzeN.png')
+      .setTitle('Maid Costume')
+      .setImage('https://imgur.com/WTDlke7.png')
       .setColor('RANDOM')
       .setFooter("Credit: ");
 
     const embed2 = new MessageEmbed()
-      .setTitle('Sword Fighting')
-      .setImage('https://i.imgur.com/x3pkWky.png')
+      .setTitle('Maid Costume')
+      .setImage('https://imgur.com/CKqq1PC.png')
       .setColor('RANDOM')
       .setFooter("Credit: ")
-
-    const embed3 = new MessageEmbed()
-      .setTitle('Dodge Pose')
-      .setImage('https://imgur.com/ZszLqEG.png')
-      .setColor('RANDOM')
-      .setFooter('Credit: ')
       
       const embed4 = new MessageEmbed()
-      .setTitle('Superhero Pose')
-      .setImage('https://imgur.com/6ckHWbi.png')
+      .setTitle('Cloak')
+      .setImage('https://imgur.com/cByzDmb.png')
       .setColor('RANDOM')
-      .setFooter('Credit: ')
+      .setFooter('Credit: BLUE Z')
       
       const embed5 = new MessageEmbed()
-      .setTitle('Easy Pose')
-      .setImage('https://imgur.com/NDNr7Zo.png')
+      .setTitle('Gown')
+      .setImage('https://imgur.com/ZP7nilv.png')
       .setColor('RANDOM')
-      .setFooter('Credit: ')
+      .setFooter('Credit: @Chamae5959')
       
       const embed6 = new MessageEmbed()
-      .setTitle('Sword Pose')
-      .setImage('https://imgur.com/5GwrOSd.png')
+      .setTitle('Skirt')
+      .setImage('https://imgur.com/elo4sek.png')
+      .setColor('RANDOM')
+      .setFooter('Credit: BLUE Z')
+      
+      const embed7 = new MessageEmbed()
+      .setTitle('Skirt school')
+      .setImage('https://imgur.com/FAId9PC.png')
       .setColor('RANDOM')
       .setFooter('Credit: ')
       
-      
+      const embed8 = new MessageEmbed()
+      .setTitle('Skirts')
+      .setImage('https://imgur.com/reZHcO3.png')
+      .setColor('RANDOM')
+      .setFooter('Credit: ')
 
-    const embeds = [embed1, embed2, embed3, embed4, embed5, embed6]
+    const embeds = [embed1, embed2, embed4, embed5, embed6, embed7, embed8]
 
 
     pagination({
